@@ -1,0 +1,10 @@
+liufencn-short-slug:
+  admin:
+    settings:
+      enabled_label: Short discussion URLs
+      enabled_help: "Rewrite discussion URLs to /d/{id} by dropping the slug that Flarum generates out of the title. Existing discussions keep working either way, because the numeric ID is always enough to resolve a link."
+      allow_custom_label: Allow custom slugs
+      allow_custom_help: "Users who are allowed to rename a discussion may submit their own slug through the API, and slugs written by the short-slug:set command are preserved. Turn this off to force the bare /d/{id} form everywhere."
+  forum:
+    discussion:
+      custom_slug_not_allowed: "You are not allowed to set a custom URL for this discussion."
