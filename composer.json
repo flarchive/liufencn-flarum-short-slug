@@ -1,0 +1,44 @@
+{
+    "name": "liufencn/flarum-short-slug",
+    "description": "Shorten discussion URLs in Flarum 2.x: /d/{id} instead of /d/{id}-pinyin-slug. Comes with an admin toggle, optional custom slugs and CLI tools to clean up existing discussions.",
+    "keywords": [
+        "flarum",
+        "flarum-extension",
+        "slug",
+        "url",
+        "permalink",
+        "short-url"
+    ],
+    "type": "flarum-extension",
+    "license": "AGPL-3.0-or-later",
+    "support": {
+        "issues": "https://github.com/LiuFenCN/flarum-short-slug/issues",
+        "source": "https://github.com/LiuFenCN/flarum-short-slug"
+    },
+    "authors": [
+        {
+            "name": "LiuFenCN",
+            "homepage": "https://github.com/LiuFenCN"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "flarum/core": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LiuFenCN\\ShortSlug\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Short Slug",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-link",
+                "backgroundColor": "#276bb0",
+                "color": "#fff"
+            }
+        }
+    }
+}

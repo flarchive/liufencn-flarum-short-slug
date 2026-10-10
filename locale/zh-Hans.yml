@@ -1,0 +1,10 @@
+liufencn-short-slug:
+  admin:
+    settings:
+      enabled_label: 精简讨论链接
+      enabled_help: "去掉 Flarum 依据标题自动生成的 slug，使讨论地址变为 /d/{id}。已有链接不会失效，因为解析时只依赖数字 ID。"
+      allow_custom_label: 允许自定义 slug
+      allow_custom_help: "有重命名权限的用户可通过 API 提交自定义 slug，short-slug:set 命令写入的 slug 也会保留。关闭后全站强制使用 /d/{id}。"
+  forum:
+    discussion:
+      custom_slug_not_allowed: "你没有为此讨论设置自定义链接的权限。"
